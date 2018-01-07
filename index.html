@@ -80,6 +80,16 @@ color:red;
 <div id="image1">
 <img src="https://www.walldevil.com/wallpapers/a35/web-background-raihar-nvrobottrees-images-tweets-profile.jpg" width="1000px" height="200px">
   </div>
+ <audio id="myAudio" controls>
+  <source src="https://downpwnew.com/upload_file/5570/6757/Latest%20Bollywood%20Hindi%20Mp3%20Songs%20-%202017/Dil%20Chori%20-%20Yo%20Yo%20Honey%20Singh%20Mp3%20Song/Dil%20Chori%20-%20Yo%20Yo%20Honey%20Singh%20190Kbps.ogg" type="audio/ogg">
+  <source src="https://downpwnew.com/upload_file/5570/6757/Latest%20Bollywood%20Hindi%20Mp3%20Songs%20-%202017/Dil%20Chori%20-%20Yo%20Yo%20Honey%20Singh%20Mp3%20Song/Dil%20Chori%20-%20Yo%20Yo%20Honey%20Singh%20190Kbps.mp3" type="audio/mpeg">
+</audio>
+<script>
+var aud = document.getElementById("myAudio");
+aud.onprogress = function() {
+    alert("Downloading audio");
+};
+</script> 
   </div>
 </body>
 </html>
