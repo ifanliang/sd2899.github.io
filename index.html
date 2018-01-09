@@ -69,7 +69,48 @@ color:red;
  {
    text-decoration:none;
     color:red;
- }  
+ }
+.wallpa
+{
+	background-color:blue;
+	color:white;
+	padding:16px;
+	font-size:16px;
+	border:none;
+	cursor:pointer;
+}
+.wallpaper
+{
+	position:relative;
+	display:inline-block;
+}
+.wallpaper-content
+{
+	display:none;
+	position:absolute;
+	background-color:grey;
+	min-width:160px;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,2);
+	z-index:1;
+}
+.wallpaper-content a 
+{
+	color:black;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.wallpaper-content a.hover{
+	background-color:black;
+}
+.wallpaper:hover .wallpaper-content
+{
+	display:block;
+}
+.wallpaper:hover .wallpa
+{
+	background-color:yellow;
+}
 </style>
 </head>
 <body bgcolor="green">
@@ -86,6 +127,12 @@ color:red;
 <img src="banner.jpg" width="1000px" height="150px">
 </div>
 <div id="story">
+<div class="wallpaper">
+<button class="wallpa">WALLPAPER</button>
+<div class="wallpaper-content">
+<a href="image.html">GOD</a>
+<a href="image.html">NATURE</a>
+</div>
 </br><a href="image.html">WALLPAPER</a>
 </div>
 <div id="image1">
