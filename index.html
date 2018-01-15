@@ -90,6 +90,7 @@ color:red;
 }
 .mySlides {display: none}
 img {vertical-align: middle;}
+	img{border-radius:10px;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -179,13 +180,54 @@ function showSlides() {
 <a href="nature.html">NATURE</a>
 <a href="flower.html">FLOWER</a>
 <a href="animals.html">ANIMALS</a>	
-<a href="#">BUTTERFLY</a>
 </div>
 </div>
 </div></br>
-<div id="image1">
-<img src="https://www.walldevil.com/wallpapers/a35/web-background-raihar-nvrobottrees-images-tweets-profile.jpg" width="1000px" height="200px">
-</div></br>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="https://s-media-cache-ak0.pinimg.com/originals/f5/0b/1b/f50b1bc6aa339988102d60ad4e98de43.jpg" width="1000px" height="300px">
+</div>
+<div class="mySlides fade">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnU5MpcHEpub2E3wyoo_6psxVOC722073D6FY2ORsjR5nqvTRaAQ" width="1000px" height="300px">
+ </div>
+<div class="mySlides fade">
+ <img src="https://livewallpaper.info/wp-content/uploads/2017/08/Buds-And-Roses-Fresh-Flowers-buds-and-roses-fresh-flowers-1080p-buds-and-rose-wallpaper-wpc9003229.jpg" width="1000px" height="300px">
+</div>
+<div class="mySlides fade">
+<img src="http://www.ultrahdfreewallpapers.com/uploads/large/animals/tiger-hd-wallpaper-0293.jpg" width="1000px" height="300px">
+</div>
+<div class="mySlides fade">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbKowGUzqFmydqZLZwYLZ4-wTiRhp5nafEqO6xRDaG4EebNyS" width="1000px" height="300px">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script>
+ var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}
+</script></br>
 <div id="story1">
 <div class="wallpaper">
 <button class="wallpa">SONGS</button>
