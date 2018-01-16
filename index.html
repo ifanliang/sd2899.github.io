@@ -128,7 +128,7 @@ img {vertical-align: middle;}
 img {vertical-align: middle;}
 	img{border-radius:20px;
 	border:5px solid black}
-.slideshows-container {
+.slideshows-counter {
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -220,7 +220,7 @@ function showSlides() {
 </div>
 </div>
 </div></br>
-<div class="slideshows-container">
+<div class="slideshow-counter">
 <div class="mySlide fades">
 <img src="http://2.bp.blogspot.com/-XjbD2NnZcGk/VqOj-oAKmSI/AAAAAAAABN0/97xkYkuClnA/s1600/Shiva-Parvati-Ganesh-Kartikeya-Family-Desktop-Wallpaper-1366x768.jpg" width="1000px" height="300px">
 </div>
@@ -251,7 +251,7 @@ showSlides();
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlide");
-    var dots = document.getElementsByClassName("dot");
+    var dots = document.getElementsByClassName("dots");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
     }
