@@ -128,12 +128,12 @@ img {vertical-align: middle;}
 img {vertical-align: middle;}
 	img{border-radius:20px;
 	border:5px solid black}
-.slideshow-container {
+.slideshows-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 } 
-.dot {
+.dots {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -143,20 +143,20 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active, .dots:hover {
   background-color: #717171;
 }
-.fade {
-  -webkit-animation-name: fade;
+.fades {
+  -webkit-animation-name: fades;
   -webkit-animation-duration: 1.5s;
-  animation-name: fade;
+  animation-name: fades;
   animation-duration: 1.5s;
 }
-@-webkit-keyframes fade {
+@-webkit-keyframes fades {
   from {opacity: .4} 
   to {opacity: 1}
 }
-@keyframes fade {
+@keyframes fades {
   from {opacity: .4} 
   to {opacity: 1}
 }
@@ -220,30 +220,30 @@ function showSlides() {
 </div>
 </div>
 </div></br>
-<div class="slideshow-container">
-<div class="mySlide fade">
+<div class="slideshows-container">
+<div class="mySlide fades">
 <img src="http://2.bp.blogspot.com/-XjbD2NnZcGk/VqOj-oAKmSI/AAAAAAAABN0/97xkYkuClnA/s1600/Shiva-Parvati-Ganesh-Kartikeya-Family-Desktop-Wallpaper-1366x768.jpg" width="1000px" height="300px">
 </div>
-<div class="mySlide fade">
+<div class="mySlide fades">
 <img src="http://hdlatestwallpaper.com/?edmc=7264" width="1000px" height="300px">
  </div>
-<div class="mySlide fade">
+<div class="mySlide fades">
  <img src="http://www.cutehdwallpapers.com/uploads/large/latest-wallpapers/latest-hd-bird-flying-wallpaper.jpg" width="1000px" height="300px">
 </div>
-<div class="mySlide fade">
+<div class="mySlide fades">
 <img src="https://www.newhdwallpapers.in/wp-content/uploads/2014/04/Download-Latest-Wallpaper.jpg" width="1000px" height="300px">
 </div>
-<div class="mySlide fade">
+<div class="mySlide fades">
 <img src="http://hdwallpapersrocks.com/wp-content/uploads/2015/10/Gorgeous-doll-latest-wallpaper.jpg" width="1000px" height="300px">
 </div>
 </div>
 <br>
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dots" onclick="currentSlide(1)"></span> 
+  <span class="dots" onclick="currentSlide(2)"></span> 
+  <span class="dots" onclick="currentSlide(3)"></span> 
+  <span class="dots" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(5)"></span>
 </div>
 <script>
  var slideIndex = 0;
