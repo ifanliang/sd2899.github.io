@@ -89,6 +89,7 @@ color:red;
 	background-color:grey;
 }
 .mySlides {display: none}
+	.mySide {display:none}
 img {vertical-align: middle;}
 	img{border-radius:20px;
 	border:5px solid black}
@@ -107,9 +108,22 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.dots{
+ cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 .active, .dot:hover {
   background-color: #717171;
 }
+.active, .dots:hover {
+ background-color: #717171;
+	}
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -184,6 +198,48 @@ function showSlides() {
 </div>
 </div>
 </div></br>
+
+<div class="slideshow-container">
+<div class="mySide fade">
+<img src="http://hdwallpapersrocks.com/wp-content/uploads/2015/10/Gorgeous-doll-latest-wallpaper.jpg" width="1000px" height="300px">
+</div>
+<div class="mySide fade">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGy6__h79Xtxqklt-Ar3JtCBDgoZeDgN1ypN0Df6zGE6S4qXJK" width="1000px" height="300px">
+ </div>
+<div class="mySide fade">
+ <img src="https://cdn5.f-cdn.com/ppic/1439834/logo/3523400/pink_girl.jpg" width="1000px" height="300px">
+</div>
+<div class="mySide fade">
+<img src="http://www.whatsappdunia.com/uploads/images/59476deca2a2f.jpg" width="1000px" height="300px">
+</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span> 
+  <span class="dots" onclick="currentSlide(2)"></span> 
+  <span class="dots" onclick="currentSlide(3)"></span> 
+  <span class="dots" onclick="currentSlide(4)"></span>
+</div>
+<script>
+ var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySide");
+    var dots = document.getElementsByClassName("dots");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000);
+}
+</script></br>
 <div id="story1">
 <div class="wallpaper">
 <button class="wallpa">SONGS</button>
