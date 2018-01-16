@@ -88,7 +88,6 @@ color:red;
 {
 	background-color:grey;
 }
-	.mySlide{display: none}
 .mySlides {display: none}
 img {vertical-align: middle;}
 	img{border-radius:20px;
@@ -124,6 +123,12 @@ img {vertical-align: middle;}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+.mySied{display: none}
+.slideshow{
+max-width:1000px;
+position: relative;
+margin: auto;
 }
 </style>
 </head>
@@ -185,7 +190,7 @@ function showSlides() {
 </div>
 </div>
 </div></br>
-<div class="slideshow-container">
+<div class="slideshow">
 <div class="mySlides fade">
 <img src="http://2.bp.blogspot.com/-XjbD2NnZcGk/VqOj-oAKmSI/AAAAAAAABN0/97xkYkuClnA/s1600/Shiva-Parvati-Ganesh-Kartikeya-Family-Desktop-Wallpaper-1366x768.jpg" width="1000px" height="300px">
 </div>
@@ -215,7 +220,7 @@ function showSlides() {
 showSlides();
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlide");
+    var slides = document.getElementsByClassName("mySide");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
