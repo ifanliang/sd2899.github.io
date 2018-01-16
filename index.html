@@ -88,6 +88,7 @@ color:red;
 {
 	background-color:grey;
 }
+	.mySlide{display: none}
 .mySlides {display: none}
 img {vertical-align: middle;}
 	img{border-radius:20px;
@@ -214,7 +215,7 @@ function showSlides() {
 showSlides();
 function showSlides() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var slides = document.getElementsByClassName("mySlide");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";  
