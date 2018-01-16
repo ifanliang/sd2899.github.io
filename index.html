@@ -272,13 +272,13 @@ function slideShow() {
 </div>
 <div class="slideshow-container">
 <div class="mySite fade">
-<img src="https://www.papajaffari.co.za/wp-content/uploads/2014/02/indian-gods-hindu-gods-collage-shirdi-sai-baba-saibaba-wallpaper.jpg" width="1000px" height="300px">
+<img src="http://avante.biz/wp-content/uploads/God-Hd-Wallpaper/God-Hd-Wallpaper-044.jpg" width="1000px" height="300px">
 </div>
 <div class="mySite fade">
-<img src="http://st1.bollywoodlife.com/wp-content/uploads/2015/05/bollywood-banner-6a.jpg" width="1000px" height="300px">
+<img src="http://timothykurek.com/wp-content/uploads/2017/10/gods-wallpapers-100-quality-gods-hd-backgrounds-bit718-hd-on-god-wallpaper-hd-for-pc.jpg" width="1000px" height="300px">
  </div>
 <div class="mySite fade">
- <img src="http://www.ptcpunjabi.co.in/wp-content/uploads/2017/11/Punjabi-Artists.jpg" width="1000px" height="300px">
+ <img src="http://www.kinyu-z.net/data/wallpapers/66/934006.jpg" width="1000px" height="300px">
 </div>
 </div>
 <br>
@@ -292,17 +292,17 @@ function slideShow() {
 slideShows();
 function slideShow() {
     var z;
-    var slide = document.getElementsByClassName("mySite");
+    var site = document.getElementsByClassName("mySite");
     var dots = document.getElementsByClassName("dotss");
-    for (z = 0; z < slide.length; z++) {
-       slide[z].style.display = "none";  
+    for (z = 0; z < site.length; z++) {
+       site[z].style.display = "none";  
     }
     indexSite++;
-    if (indexSite > slide.length) {indexSite = 1}    
+    if (indexSite > site.length) {indexSite = 1}    
     for (z = 0; z < dots.length; z++) {
         dots[z].className = dots[z].className.replace(" active", "");
     }
-    slide[indexSite-1].style.display = "block";  
+    site[indexSite-1].style.display = "block";  
     dots[indexSite-1].className += " active";
     setTimeout(slideShows, 3000);
 }
