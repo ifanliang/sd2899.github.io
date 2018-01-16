@@ -221,23 +221,23 @@ function showSlides() {
   <span class="dots" onclick="currentSlide(4)"></span>
 </div>
 <script>
- var slideIndex = 0;
+ var indexSlide = 0;
 slideShow();
 function slideShow() {
     var j;
-    var slides = document.getElementsByClassName("mySide");
+    var slide = document.getElementsByClassName("mySide");
     var dots = document.getElementsByClassName("dots");
-    for (j = 0; j < slides.length; j++) {
-       slides[j].style.display = "none";  
+    for (j = 0; j < slide.length; j++) {
+       slide[j].style.display = "none";  
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    indexSlide++;
+    if (indexSlide > slide.length) {indexSlide = 1}    
     for (j = 0; j < dots.length; j++) {
         dots[j].className = dots[j].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000);
+    slide[indexSlide-1].style.display = "block";  
+    dots[indexSlide-1].className += " active";
+    setTimeout(slideShow, 3000);
 }
 </script></br>
 <div id="story1">
