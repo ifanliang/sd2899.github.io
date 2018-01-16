@@ -148,6 +148,7 @@ img {vertical-align: middle;}
 .active, .dots:hover {
  background-color: #717171;
 	}
+	mySite{display:none}
 .dotss{
  cursor: pointer;
   height: 15px;
@@ -270,13 +271,13 @@ function slideShow() {
 </div>
 </div>
 <div class="slideshow-container">
-<div class="mySide fade">
+<div class="mySite fade">
 <img src="https://www.papajaffari.co.za/wp-content/uploads/2014/02/indian-gods-hindu-gods-collage-shirdi-sai-baba-saibaba-wallpaper.jpg" width="1000px" height="300px">
 </div>
-<div class="mySide fade">
+<div class="mySite fade">
 <img src="http://st1.bollywoodlife.com/wp-content/uploads/2015/05/bollywood-banner-6a.jpg" width="1000px" height="300px">
  </div>
-<div class="mySide fade">
+<div class="mySite fade">
  <img src="http://www.ptcpunjabi.co.in/wp-content/uploads/2017/11/Punjabi-Artists.jpg" width="1000px" height="300px">
 </div>
 </div>
@@ -287,22 +288,22 @@ function slideShow() {
   <span class="dotss" onclick="currentSlide(3)"></span> 
  </div>
 <script>
- var indexSlide = 0;
+ var indexSite = 0;
 slideShows();
 function slideShow() {
-    var j;
-    var slide = document.getElementsByClassName("mySide");
+    var z;
+    var slide = document.getElementsByClassName("mySite");
     var dots = document.getElementsByClassName("dotss");
-    for (j = 0; j < slide.length; j++) {
-       slide[j].style.display = "none";  
+    for (z = 0; z < slide.length; z++) {
+       slide[z].style.display = "none";  
     }
-    indexSlide++;
-    if (indexSlide > slide.length) {indexSlide = 1}    
-    for (j = 0; j < dots.length; j++) {
-        dots[j].className = dots[j].className.replace(" active", "");
+    indexSite++;
+    if (indexSite > slide.length) {indexSite = 1}    
+    for (z = 0; z < dots.length; z++) {
+        dots[z].className = dots[z].className.replace(" active", "");
     }
-    slide[indexSlide-1].style.display = "block";  
-    dots[indexSlide-1].className += " active";
+    slide[indexSite-1].style.display = "block";  
+    dots[indexSite-1].className += " active";
     setTimeout(slideShows, 3000);
 }
 </script></br>
