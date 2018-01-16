@@ -124,6 +124,20 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+.mySide {display:none}
+.dots{
+ cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dots:hover {
+ background-color: #717171;
+	}
 </style>
 </head>
 <body bgcolor="black"> 
@@ -186,33 +200,33 @@ function showSlides() {
 </div></br>
 
 <div class="slideshow-container">
-<div class="mySlide fade">
+<div class="mySide fade">
 <img src="http://hdwallpapersrocks.com/wp-content/uploads/2015/10/Gorgeous-doll-latest-wallpaper.jpg" width="1000px" height="300px">
 </div>
-<div class="mySlide fade">
+<div class="mySide fade">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGy6__h79Xtxqklt-Ar3JtCBDgoZeDgN1ypN0Df6zGE6S4qXJK" width="1000px" height="300px">
  </div>
-<div class="mySlide fade">
+<div class="mySide fade">
  <img src="https://cdn5.f-cdn.com/ppic/1439834/logo/3523400/pink_girl.jpg" width="1000px" height="300px">
 </div>
-<div class="mySlide fade">
+<div class="mySide fade">
 <img src="http://www.whatsappdunia.com/uploads/images/59476deca2a2f.jpg" width="1000px" height="300px">
 </div>
 </div>
 <br>
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dots" onclick="currentSlide(1)"></span> 
+  <span class="dots" onclick="currentSlide(2)"></span> 
+  <span class="dots" onclick="currentSlide(3)"></span> 
+  <span class="dots" onclick="currentSlide(4)"></span>
 </div>
 <script>
  var indexSlide = 0;
 slideShow();
 function slideShow() {
     var j;
-    var slide = document.getElementsByClassName("mySlide");
-    var dots = document.getElementsByClassName("dot");
+    var slide = document.getElementsByClassName("mySide");
+    var dots = document.getElementsByClassName("dots");
     for (j = 0; j < slide.length; j++) {
        slide[j].style.display = "none";  
     }
