@@ -108,6 +108,9 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.active, .dot:hover {
+  background-color: #717171;
+}
 .dots{
  cursor: pointer;
   height: 15px;
@@ -117,9 +120,6 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
 }
 .active, .dots:hover {
  background-color: #717171;
@@ -222,8 +222,8 @@ function showSlides() {
 </div>
 <script>
  var slideIndex = 0;
-showSlides();
-function showSlides() {
+slideShow();
+function slideShow() {
     var i;
     var slides = document.getElementsByClassName("mySide");
     var dots = document.getElementsByClassName("dots");
