@@ -148,8 +148,8 @@ img {vertical-align: middle;}
 .active, .dots:hover {
  background-color: #717171;
 	}
-	mySite{display:none}
-.dotss{
+mySite{display:none}
+.dods{
  cursor: pointer;
   height: 15px;
   width: 15px;
@@ -159,7 +159,7 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dotss:hover {
+.active, .dods:hover {
  background-color: #717171;
 	}
 </style>
@@ -283,9 +283,9 @@ function slideShow() {
 </div>
 <br>
 <div style="text-align:center">
-  <span class="dotss" onclick="currentSlide(1)"></span> 
-  <span class="dotss" onclick="currentSlide(2)"></span> 
-  <span class="dotss" onclick="currentSlide(3)"></span> 
+  <span class="dods" onclick="currentSlide(1)"></span> 
+  <span class="dods" onclick="currentSlide(2)"></span> 
+  <span class="dods" onclick="currentSlide(3)"></span> 
  </div>
 <script>
  var indexSite = 0;
@@ -293,7 +293,7 @@ slideShows();
 function slideShow() {
     var z;
     var site = document.getElementsByClassName("mySite");
-    var dots = document.getElementsByClassName("dotss");
+    var dots = document.getElementsByClassName("dods");
     for (z = 0; z < site.length; z++) {
        site[z].style.display = "none";  
     }
